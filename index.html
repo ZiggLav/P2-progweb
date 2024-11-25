@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Naruto</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <!-- Header e Navegação -->
+  <header>
+    <h1>Naruto</h1>
+    <nav>
+      <ul>
+        <li><a href="#home" onclick="showSection('home')">Início</a></li>
+        <li><a href="#characters" onclick="showSection('characters')">Personagens</a></li>
+        <li><a href="#episodes" onclick="showSection('episodes')">Episódios</a></li>
+        <li><a href="#contact" onclick="showSection('contact')">Contato</a></li>
+      </ul>
+    </nav>
+    <button id="themeToggle">Alternar Tema</button>
+  </header>
+
+  <!-- Seção Página Inicial -->
+  <section id="home" class="section">
+    <img src="assets/images/banner.jpeg" alt="Banner do Anime" class="banner">
+    <p>Naruto Uzumaki é um garoto que vive na Aldeia da Folha, a vila ninja no País do Fogo. Ainda bebê, Naruto teve aprisionado em seu corpo a Kyuubi (Raposa de Nove Caudas) pelo Yondaime Hokage (Quarto Hokage e seu pai), com finalidade de salvar a Aldeia.
+
+      A mãe de Naruto era hospedeira da Kurama e estava sendo manipulada pelo óbito. Enquanto isso Minato estava com o Naruto lutando contra o obito e cuidando dele; até Minato chegar e selar a Kurama com a ajuda da Kuxina Uzumaki (uma kunoichi de Konohagakure que se originou no Clã Uzumaki de Uzushiogakure).
+      
+      Como não conseguiram destruir o demônio, Yondaime fez um pacto com o Shinigami (Deus da Morte), onde sacrificou sua própria alma para selar a Kyuubi no corpo de um recém-nascido.
+      
+      Então ele passa ser visto pelas pessoas como um monstro, não só pelos familiares das pessoas mortas pela Kyuubi, mas também por pessoas que não toleram suas brincadeiras.
+      
+      Aos doze anos, o menino torna-se extremamente hiperativo, incompreendido e solitário; e tem como sonho tornar-se o Hokage de sua vila. Sendo assim, reconhecido por todos como um ninja poderoso e respeitado.</p>
+  </section>
+
+  <!-- Seção Galeria de Personagens -->
+  <section id="characters" class="section hidden">
+    <h2>Galeria de Personagens</h2>
+    <div class="character-grid">
+      <div class="character-card" onclick="showCharacterDetails('character1')">
+        <img src="assets/images/character1.png" alt="Personagem 1">
+        <h3>Naruto Uzumaki</h3>
+        <p>Naruto Uzumaki (うずまきナルト, Uzumaki Naruto) é um shinobi de Konohagakure do clã Uzumaki e protagonista homônimo da franquia Naruto. Desde seu nascimento, ele se tornou jinchuuriki das Nove-Caudas, um destino que o levou a ser condenado e negligenciado por toda a aldeia durante sua infância. Depois de entrar para o Time 7, ao lado de Sakura Haruno, Sasuke Uchiha e sob comando de Kakashi Hatake, Naruto trabalhou duro para ganhar o respeito e o reconhecimento da aldeia, com o sonho de se tornar Hokage.</p>
+      </div>
+      <div class="character-card" onclick="showCharacterDetails('character2')">
+        <img src="assets/images/character2.webp" alt="Personagem 2">
+        <h3>Sasuke Uchiha</h3>
+        <p>Sasuke Uchiha (うちはサスケ, Uchiha Sasuke) é um dos últimos membros sobreviventes do clã Uchiha de Konohagakure, além de ser a reencarnação atual de Indra. Ele se tornou um shinobi para que pudesse algum dia ficar forte o suficiente para se vingar contra o seu irmão mais velho, Itachi, que tinha massacrado todo o seu clã.</p>
+      </div>
+      <div class="character-card" onclick="showCharacterDetails('character3')">
+        <img src="assets/images/character3.webp" alt="Personagem 3">
+        <h3>Sakura Haruno:</h3>
+        <p>Sakura Uchiha (うちはサクラ, Uchiha Sakura) (batizada Haruno (春野) inicialmente) é uma kunoichi de nível jounin do clã Uchiha, por se casar com Sasuke Uchiha, de Konohagakure. Ela é designada como um membro do Time Kakashi, mas rapidamente encontra-se mal preparada para os deveres de um ninja e as complicações das vidas de seus companheiros de equipe.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção Episódios Favoritos -->
+  <section id="episodes" class="section hidden">
+    <h2>Episódios Favoritos</h2>
+    <div class="episode-card">
+      <img src="assets/images/episode1.webp" alt="Episódio 1">
+      <h3>Episódio 1</h3>
+      <p>Uzumaki Naruto começa fazendo encrencas pintando o rosto dos Hokages, e os habitantes correm atrás dele só que não conseguem pegá-lo, Umino Iruka alcança-o e diz para limpar a pintura como castigo.</p>
+      <button onclick="openTrailer('https://www.youtube.com/watch?v=AhG2dKqunLQ&pp=ygULbmFydXRvIGVwIDE%3D')">Assistir Episódio</button>
+    </div>
+    <div class="episode-card">
+      <img src="assets/images/episode2.jpg" alt="Episódio 2">
+      <h3>Episódio 2</h3>
+      <p>Sarutobi Konohamaru, neto do Terceiro Hokage é apresentado, disposto a ser reconhecido pelo seu próprio nome e valor, ele tenta aprender algumas técnicas com Naruto, algo que ajude-o a derrotar seu avô.</p>
+      <button onclick="openTrailer('https://www.youtube.com/watch?v=zOPuoXUAzdE&pp=ygULbmFydXRvIGVwIDI%3D')">Assistir Episódio</button>
+    </div>
+    <div class="episode-card">
+      <img src="assets/images/episode3.jpeg" alt="Episódio 3">
+      <h3>Episódio 3</h3>
+      <p>Haruno Sakura aparece e é mostrada como a menina de quem Naruto gosta, mas ela só tem olhos para Uchiha Sasuke, que é frio e quieto. Disposto a acabar com a fama do garoto popular da classe, Naruto se transforma no Uchiha para denegrir a imagem dele e, consequentemente, conseguir a atenção de Sakura.</p>
+      <button onclick="openTrailer('https://www.youtube.com/watch?v=BHK0SjqYZgo&pp=ygULbmFydXRvIGVwIDM%3D')">Assistir Episódio</button>
+    </div>
+  </section>
+
+  <!-- Seção Contato -->
+  <section id="contact" class="section hidden">
+    <h2>Entre em Contato</h2>
+    <form id="contactForm">
+      <input type="text" name="name" placeholder="Seu nome" required>
+      <input type="email" name="email" placeholder="Seu email" required>
+      <textarea name="message" placeholder="Sua mensagem"></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+    <p id="successMessage" class="hidden">Mensagem enviada com sucesso!</p>
+  </section>
+
+  <!-- Modal para Detalhes -->
+  <div id="modal" class="hidden">
+    <div class="modal-content">
+      <button class="close-modal" onclick="closeModal()">X</button>
+      <div id="modal-body">
+        <!-- Conteúdo dinâmico -->
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>

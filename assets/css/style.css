@@ -1,0 +1,241 @@
+/* Configuração Básica */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background: rgb(41, 119, 41);
+  color: white;
+  padding: 1rem 0;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header h1 {
+  margin: 0;
+}
+
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+header nav ul li {
+  margin: 0 15px;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+header #themeToggle {
+  background-color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+header #themeToggle:hover {
+  background-color: black;
+}
+
+.section {
+  padding: 2rem;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Página Inicial */
+.banner {
+  width: 100%;
+  max-height: 400px;
+  object-fit: scale-down;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Galeria de Personagens */
+.character-grid {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.character-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  width: 250px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.character-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.character-card:hover {
+  transform: scale(1.05);
+}
+
+.character-card h3 {
+  background-color: #6200ea;
+  color: white;
+  margin: 0;
+  padding: 10px 0;
+}
+
+/* Episódios Favoritos */
+.episode-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 600px;
+  text-align: center;
+}
+
+.episode-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.episode-card button {
+  background-color: #6200ea;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.episode-card button:hover {
+  background-color: #4500b5;
+}
+
+/* Formulário de Contato */
+form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+form input,
+form textarea,
+form button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+form button {
+  background-color: #6200ea;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #4500b5;
+}
+
+#successMessage {
+  text-align: center;
+  color: green;
+  font-weight: bold;
+}
+
+/* Modal */
+#modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+}
+
+#modal .modal-content {
+  background-color: white;
+  padding: 20px;
+  max-width: 600px;
+  width: 90%;
+  border-radius: 10px;
+  position: relative;
+}
+
+.close-modal {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Tema Escuro */
+body.dark-theme {
+  background-color: #121212;
+  color: #ddd;
+}
+
+body.dark-theme header {
+  background-color: #333;
+}
+
+body.dark-theme .character-card h3 {
+  background-color: #333;
+}
+
+body.dark-theme .episode-card,
+body.dark-theme form {
+  background-color: #333;
+  color: white;
+}
+
+body.dark-theme input,
+body.dark-theme textarea {
+  background-color: #444;
+  color: white;
+  border: none;
+}
+
+body.dark-theme button {
+  background-color: #6200ea;
+}
