@@ -45,13 +45,11 @@ function openTrailer(trailerUrl) {
   window.open(trailerUrl, "_blank");
 }
 
-// Alternar Tema
 const themeToggle = document.getElementById("themeToggle");
 themeToggle.addEventListener("click", () => {
   document.body.classList.toggle("dark-theme");
 });
 
-// Validação do Formulário de Contato
 const contactForm = document.getElementById("contactForm");
 const successMessage = document.getElementById("successMessage");
 
