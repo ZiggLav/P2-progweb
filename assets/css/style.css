@@ -1,4 +1,3 @@
-/* Configuração Básica */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -60,7 +59,6 @@ header #themeToggle:hover {
   display: none;
 }
 
-/* Página Inicial */
 .banner {
   width: 100%;
   max-height: 400px;
@@ -74,7 +72,6 @@ header #themeToggle:hover {
   margin-bottom: 20px;
 }
 
-/* Galeria de Personagens */
 .character-grid {
   display: flex;
   gap: 20px;
@@ -111,7 +108,6 @@ header #themeToggle:hover {
   padding: 10px 0;
 }
 
-/* Episódios Favoritos */
 .episode-card {
   display: flex;
   flex-direction: column;
@@ -176,7 +172,6 @@ form button:hover {
   font-weight: bold;
 }
 
-/* Modal */
 #modal {
   display: none;
   position: fixed;
@@ -209,7 +204,7 @@ form button:hover {
   cursor: pointer;
 }
 
-/* Tema Escuro */
+
 body.dark-theme {
   background-color: #121212;
   color: #ddd;
